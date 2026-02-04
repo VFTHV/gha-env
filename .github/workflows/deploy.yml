@@ -10,8 +10,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: node-and-express-course.p4uwjws.mongodb.net
-      MONGODB_USERNAME: vadfthv
-      MONGODB_PASSWORD: OGtPAXAFsVxf6izg
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
